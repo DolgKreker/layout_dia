@@ -1,7 +1,37 @@
 @import "utils";
 @import "fonts";
+@import "variables";
 @import "typography";
+@import "header";
+@import "nav";
+@import "carrousel";
+@import "about-us";
+
+body,
+ul,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background: $c-gray;
+  background: $bodyBackgroundColor;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
 }

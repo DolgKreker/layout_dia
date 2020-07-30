@@ -1,0 +1,54 @@
+.carrousel {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  max-height: 680px;
+  max-width: 687px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__image {
+    width: auto;
+    border-radius: 30px 0;
+  }
+
+  &__control {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 48px;
+    left: 48px;
+  }
+
+  &__arrow {
+    height: $carrouselArrowSide;
+    width: $carrouselArrowSide;
+    background-color: $lightButtonColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    &--left {
+      background-image: url(../images/slider/arrow-left.svg);
+      margin-right: 8px;
+    }
+
+    &--right {
+      background-image: url(../images/slider/arrow-right.svg);
+      margin-right: 48px;
+    }
+  }
+
+  &__heading {
+    text-transform: uppercase;
+  }
+
+  &__sub-text {
+    max-width: 264px;
+    font-size: 14px;
+    color: $lightTextColor;
+    margin-top: 8px;
+  }
+}

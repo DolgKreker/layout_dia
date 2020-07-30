@@ -1,0 +1,56 @@
+.about-us {
+
+  &__top-container {
+    margin: auto;
+    height: 504px;
+    max-width: 755px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__subText {
+    font-size: 24px;
+  }
+
+  &__bottom-container {
+    height: 759px;
+    background-color: $bodyLightBackgroundColor;
+    border-radius: 30px;
+  }
+
+  &__heading {
+    padding-top: 128px;
+    text-align: center;
+  }
+
+  &__skill-container {
+    max-width: $screenDesktop;
+    margin: auto;
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__skill {
+    width: 264px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    width: $skillImageSide;
+    height: $skillImageSide;
+    border-radius: 16px;
+  }
+
+  &__skill-heading {
+    margin: 40px 0 16px;
+  }
+
+  &__description {
+    font-size: 14px;
+    text-align: center;
+  }
+}

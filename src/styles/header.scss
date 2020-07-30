@@ -1,0 +1,64 @@
+.header {
+  max-width: $screenDesktop;
+  position: relative;
+  height: 800px;
+  margin: auto;
+  background-color: $headerBackgroundColor;
+  border-radius: 0 0 30px 30px;
+
+  &__top-container {
+    max-width: $screenNote;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    background: url(../images/logo/logo-white.svg) no-repeat center;
+    width: 45px;
+    height: 45px;
+    margin-right: $logoMargin;
+    transition: 0.45s;
+
+    &:hover {
+      transform: scale(1.2);
+      color: $blueMainColor;
+      background-image: url(../images/logo/logo-blue.svg);
+    }
+  }
+
+  &__main-container {
+    max-width: $screenNote;
+    margin: auto;
+    margin-top: 120px;
+  }
+
+  &__text {
+    max-width: 490px;
+  }
+
+  &__motto {
+    color: $lightTextColor;
+    margin-top: 32px;
+    font-size: 18px;
+  }
+
+  &__button {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 83px;
+    width: 226px;
+    height: 50px;
+    background-color: $blueMainColor;
+    border: 3px solid $blueMainColor;
+    border-radius: 8px;
+    transition: 0.45s;
+
+    &:hover {
+      background-color: $lightTextColor;
+      color: $blueMainColor;
+    }
+  }
+}
